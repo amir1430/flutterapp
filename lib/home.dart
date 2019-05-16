@@ -10,12 +10,19 @@ class Home extends StatelessWidget {
         elevation: 0,
         leading: Container(
           margin: EdgeInsets.only(left: 10),
-          child: Icon(Icons.menu),
+          child: IconButton(
+            icon: Icon(Icons.menu),
+            onPressed: () {},
+          ),
         ),
         actions: <Widget>[
           Container(
             margin: EdgeInsets.all(10),
             child: CircleAvatar(
+              child: IconButton(
+                icon: Icon(null),
+                onPressed: () {},
+              ),
               backgroundImage: NetworkImage(
                   'http://www.racemph.com/wp-content/uploads/2016/09/profile-image-placeholder.png'),
               backgroundColor: Colors.cyan,
